@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Class-Path: jar_1.jar
+Created-By: 1.6.0 (Sun Microsystems Inc.)
