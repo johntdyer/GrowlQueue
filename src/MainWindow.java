@@ -1,8 +1,7 @@
 import java.awt.event.*;
-
 import javax.swing.*;
 
-public class SimpleWindow extends JFrame {
+public class MainWindow extends JFrame {
 
 	/**
 	 * 
@@ -11,12 +10,12 @@ public class SimpleWindow extends JFrame {
 	private JButton quitButton;
 	private JPanel panel;
 
-	public SimpleWindow() {
+	public MainWindow() {
 
 		final int WINDOW_HEIGHT = 70;
 		final int WINDOW_WIDTH = 70;
 
-		setTitle("Voxeo Support Queue");
+		setTitle("Queue");
 		setSize(WINDOW_WIDTH, WINDOW_HEIGHT);
 		quitButton = new JButton("Quit");
 		quitButton.addActionListener(new QuitButtonListener());
@@ -31,11 +30,6 @@ public class SimpleWindow extends JFrame {
 	private class QuitButtonListener implements ActionListener {
 		public void actionPerformed(ActionEvent e) {
 			System.exit(0);
-
 		}
-	}
-
-	public static void main(String[] args) {
-		SimpleWindow myWindows = new SimpleWindow();
 	}
 }
